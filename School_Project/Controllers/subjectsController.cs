@@ -39,8 +39,8 @@ namespace School_Project.Controllers
         // GET: subjects/Create
         public ActionResult Create()
         {
-            //ViewBag.classId = new SelectList(db.Classes, "Classid", "ClassName");
-            //return View();
+            ViewBag.classId = new SelectList(db.Classes, "Classid", "ClassName");
+            return View();
         }
 
         // POST: subjects/Create
